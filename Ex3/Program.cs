@@ -4,7 +4,14 @@
         return a * a;
     return atimes = Convert.ToDouble("");
 }
-
+static double root(double n, double times)
+{
+    if (times == 2)
+        n = Math.Sqrt(n);
+    if (times == 3)
+        n = Math.Cbrt(n);
+    return n;
+}
 
 Console.WriteLine("Введи x1: ");
 double x1 = Convert.ToDouble(Console.ReadLine());
@@ -19,7 +26,5 @@ Console.WriteLine($"{r:F2}");
 
 Console.WriteLine("");
 
-double r1 = x2 - x1;
-double r2 = y2 - y1;
-double r3 = Math.Sqrt(stepen(r1, 2) + stepen(r2, 2));
-Console.WriteLine($"{r3:F2}");
+double rm = root(stepen(x2 - x1, 2) + stepen(y2 - y1, 2), 2);
+Console.WriteLine($"{rm:F2}");
