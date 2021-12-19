@@ -1,4 +1,8 @@
-﻿static double stepen(double a, double atimes)
+﻿//а) Написать программу, которая подсчитывает расстояние между точками с координатами x1, y1 и x2,y2
+//по формуле r=Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2).
+//Вывести результат, используя спецификатор формата .2f (с двумя знаками после запятой);
+
+static double stepen(double a, double atimes)
 {
     for (int i = 1; i < atimes; i++)
         return a * a;
